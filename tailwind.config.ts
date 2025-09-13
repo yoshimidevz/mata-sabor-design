@@ -14,17 +14,19 @@ export default {
     },
     extend: {
       fontFamily: {
-        'serif': ['Merriweather', 'serif'],
-        'sans': ['Lato', 'sans-serif'],
+        'serif': ['Nunito', 'sans-serif'],
+        'sans': ['Poppins', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-forest': 'var(--gradient-forest)', 
         'gradient-warm': 'var(--gradient-warm)',
+        'gradient-tropical': 'var(--gradient-tropical)',
       },
       boxShadow: {
         'natural': 'var(--shadow-natural)',
         'warm': 'var(--shadow-warm)',
+        'tropical': 'var(--shadow-tropical)',
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,6 +53,12 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+        },
+        vibrant: {
+          orange: "hsl(var(--vibrant-orange))",
+          yellow: "hsl(var(--vibrant-yellow))",
+          green: "hsl(var(--vibrant-green))",
+          purple: "hsl(var(--vibrant-purple))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
