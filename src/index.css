@@ -18,25 +18,25 @@ All colors MUST be HSL.
     --popover: 42 20% 95.3%;
     --popover-foreground: 0 0% 20%;
 
-    /* Verde Principal da Mata - Mais vibrante */
-    --primary: 140 35% 28%; /* Verde mais vibrante */
+    /* Verde Oliva Principal */
+    --primary: 91 24% 43%; /* #6b8453 */
     --primary-foreground: 42 20% 95.3%;
 
-    /* Marrom Terroso - Mais quente */
-    --secondary: 25 45% 35%; /* Marrom mais quente e vibrante */
+    /* Coral Terroso */
+    --secondary: 12 51% 56%; /* #c5705b */
     --secondary-foreground: 42 20% 95.3%;
 
     --muted: 42 15% 88%;
     --muted-foreground: 0 0% 45%;
 
-    /* Vermelho de Destaque (CTA) - Mais vibrante */
-    --accent: 357 75% 48%; /* Vermelho mais vibrante */
+    /* Dourado de Destaque (CTA) */
+    --accent: 45 69% 53%; /* #d7a437 */
     --accent-foreground: 42 20% 95.3%;
 
-    /* Cores adicionais vibrantes */
-    --vibrant-orange: 30 90% 55%; /* Laranja tropical */
-    --vibrant-yellow: 45 95% 60%; /* Amarelo dourado */
-    --vibrant-green: 120 65% 45%; /* Verde limão */
+    /* Cores adicionais baseadas na nova paleta */
+    --vibrant-orange: 12 51% 56%; /* Coral */
+    --vibrant-yellow: 45 69% 53%; /* Dourado */
+    --vibrant-green: 91 24% 43%; /* Verde oliva */
     --vibrant-purple: 280 60% 55%; /* Roxo açaí */
 
     --destructive: 0 84.2% 60.2%;
@@ -46,11 +46,11 @@ All colors MUST be HSL.
     --input: 42 15% 85%;
     --ring: 140 35% 28%;
 
-    /* Gradientes mais vibrantes */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--vibrant-green)));
-    --gradient-forest: linear-gradient(180deg, hsl(var(--primary) / 0.15), hsl(var(--vibrant-yellow) / 0.08));
-    --gradient-warm: linear-gradient(135deg, hsl(var(--accent) / 0.15), hsl(var(--vibrant-orange) / 0.1));
-    --gradient-tropical: linear-gradient(45deg, hsl(var(--vibrant-orange) / 0.2), hsl(var(--vibrant-yellow) / 0.2));
+    /* Gradientes com nova paleta */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-forest: linear-gradient(180deg, hsl(var(--primary) / 0.15), hsl(var(--accent) / 0.08));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--secondary) / 0.15), hsl(var(--accent) / 0.1));
+    --gradient-tropical: linear-gradient(45deg, hsl(var(--secondary) / 0.2), hsl(var(--accent) / 0.2));
 
     /* Sombras coloridas */
     --shadow-natural: 0 10px 30px -10px hsl(var(--primary) / 0.25);

@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <h1 className="text-2xl font-serif font-bold text-primary">
+            <h1 className="text-2xl font-serif font-bold text-primary uppercase">
               Sabor da Mata
             </h1>
           </Link>

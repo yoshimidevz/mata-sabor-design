@@ -15,7 +15,7 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight uppercase">
           Sabor da Mata
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 font-sans font-light leading-relaxed">
