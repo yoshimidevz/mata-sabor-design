@@ -13,6 +13,19 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'serif': ['Merriweather', 'serif'],
+        'sans': ['Lato', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-forest': 'var(--gradient-forest)', 
+        'gradient-warm': 'var(--gradient-warm)',
+      },
+      boxShadow: {
+        'natural': 'var(--shadow-natural)',
+        'warm': 'var(--shadow-warm)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

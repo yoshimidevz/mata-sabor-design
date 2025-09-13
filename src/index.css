@@ -8,35 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sabor da Mata Design System */
+    --background: 42 20% 95.3%; /* #F4F1E9 - Branco-gelo */
+    --foreground: 0 0% 20%; /* #333333 - Cinza escuro */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 42 20% 95.3%;
+    --card-foreground: 0 0% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 42 20% 95.3%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Verde Principal da Mata */
+    --primary: 140 25% 22%; /* #2E4636 - Verde escuro */
+    --primary-foreground: 42 20% 95.3%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Marrom Terroso */
+    --secondary: 15 40% 24%; /* #5A3825 - Marrom rico */
+    --secondary-foreground: 42 20% 95.3%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 42 15% 88%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Vermelho de Destaque (CTA) */
+    --accent: 357 64% 41%; /* #A12C2F - Vermelho vibrante */
+    --accent-foreground: 42 20% 95.3%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 42 20% 95.3%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 15% 85%;
+    --input: 42 15% 85%;
+    --ring: 140 25% 22%;
 
-    --radius: 0.5rem;
+    /* Gradientes naturais */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-forest: linear-gradient(180deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.05));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--accent) / 0.1), hsl(var(--secondary) / 0.1));
+
+    /* Sombras orgânicas */
+    --shadow-natural: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-warm: 0 5px 20px -5px hsl(var(--accent) / 0.3);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +69,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 140 25% 12%;
+    --foreground: 42 20% 95.3%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 140 25% 15%;
+    --card-foreground: 42 20% 95.3%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 140 25% 15%;
+    --popover-foreground: 42 20% 95.3%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 42 20% 95.3%;
+    --primary-foreground: 140 25% 22%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 15 40% 35%;
+    --secondary-foreground: 42 20% 95.3%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 140 15% 20%;
+    --muted-foreground: 42 10% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 357 64% 55%;
+    --accent-foreground: 42 20% 95.3%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 42 20% 95.3%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 140 15% 25%;
+    --input: 140 15% 25%;
+    --ring: 42 20% 95.3%;
   }
 }
 
