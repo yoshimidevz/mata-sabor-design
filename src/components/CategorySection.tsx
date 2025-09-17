@@ -34,33 +34,34 @@ const categories = [
 
 const CategorySection = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-forest">
+    <section className="py-20 px-4 bg-gradient-to-br from-background via-accent/5 to-secondary/10">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Nossas Categorias
           </h2>
-          <p className="text-lg text-muted-foreground font-sans max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground font-sans max-w-3xl mx-auto leading-relaxed">
             Descubra nossa seleção de produtos artesanais feitos com o melhor da Mata Atlântica
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category) => (
-            <Link key={category.name} to={category.link}>
-              <Card className="group overflow-hidden cursor-pointer hover:shadow-natural transition-all duration-300 hover:scale-105 bg-card border-border/50">
-                <div className="aspect-square overflow-hidden">
+            <Link key={category.name} to={category.link} className="group">
+              <Card className="overflow-hidden cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 bg-white/80 backdrop-blur-sm border-accent/20">
+                <div className="aspect-square overflow-hidden relative">
                   <img
                     src={category.image}
                     alt={category.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="text-xl font-serif font-semibold text-primary mb-2">
+                  <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">
                     {category.name}
                   </h3>
-                  <p className="text-muted-foreground font-sans text-sm">
+                  <p className="text-muted-foreground font-sans">
                     {category.description}
                   </p>
                 </div>

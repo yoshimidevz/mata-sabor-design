@@ -47,7 +47,8 @@ All colors MUST be HSL.
     --ring: 140 35% 28%;
 
     /* Gradientes com nova paleta */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-hero-bg: linear-gradient(135deg, hsl(var(--secondary) / 0.9), hsl(var(--accent) / 0.8));
     --gradient-forest: linear-gradient(180deg, hsl(var(--primary) / 0.15), hsl(var(--accent) / 0.08));
     --gradient-warm: linear-gradient(135deg, hsl(var(--secondary) / 0.15), hsl(var(--accent) / 0.1));
     --gradient-tropical: linear-gradient(45deg, hsl(var(--secondary) / 0.2), hsl(var(--accent) / 0.2));

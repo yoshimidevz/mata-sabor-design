@@ -37,13 +37,13 @@ const featuredProducts = [
 
 const FeaturedProducts = () => {
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/10">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Mais Vendidos
           </h2>
-          <p className="text-lg text-muted-foreground font-sans max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground font-sans max-w-3xl mx-auto leading-relaxed">
             Os queridinhos dos nossos clientes. Produtos que trazem todo o sabor da floresta
           </p>
         </div>
